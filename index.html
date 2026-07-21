@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Hyde Park.css">
+  <link rel="js" href="hydepark.js">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="pics/hydeparlklogo.jpg" alt="">
+
+    <h1 style="font-size: 50px; float: left; margin-left: 6%; padding-top: 3%;">
+      Hyde Park Waterhouse INC.
+    </h1>
+    <p style="text-align: center; font-size: 17px; margin-left: 75%;padding-top: 3%;">
+      <b style="font-size: 18px;">Corporate Offices:</b><br>
+      Address: 1606Rocksorings Blvd,<br>
+      Shreveport, Louisiana 71119 <br>
+      Phone: [762] 930-6686 <br>
+      <b style="font-size: 18px;">Augusta Office:</b><br>
+      1602 Johns Road suite A<br>
+      Augusta Georgia 30904
+    </p>
+  </header>
+  <nav>
+    <a href="">Home</a>
+    <a href="About.html">About</a>
+    <a href="Services.html">Services</a>
+    <a href="Government Contracting.html">Government Contracting</a>
+    <a href="Capabilities.html">Capabilities</a>
+    <a href="Certifications.html">Certifications</a>
+    <a href="Projects.html">Projects</a>
+    <a href="Careers.html">Careers</a>
+    <a href="Contact.html">Contact</a>
+  </nav>
+  <article style=" ">
+    <h1 style="font-size: 30px; text-align: center">
+      “Building Resilience. Restoring Communities. Delivering Solutions.”
+    </h1>
+    <div>
+      <h1 style="font-size: 50px; text-align: center">HEROES</h1>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="pics/bulldozer.jpg" style="width:500px;">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="pics/Dumptruck.jpg" style="width:500px;">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="pics/fireDamage.jpg" style="width:500px;">
+        </div>
+                <div class="mySlides fade">
+          <img src="pics/grader.jpg" style="width:500px;">
+        </div>
+                <div class="mySlides fade">
+          <img src="pics/Infrastructure-recovery.jpg" style="width:500px;">
+        </div>
+                <div class="mySlides fade">
+          <img src="pics/Logistics operations trailers.jpg" style="width:500px;">
+        </div>
+                <div class="mySlides fade">
+          <img src="pics/stromDamage.jpg" style="width:500px;">
+        </div>
+                <div class="mySlides fade">
+          <img src="pics/temp-housing.jpg" style="width:500px;">
+        </div>
+                <div class="mySlides fade">
+          <img src="pics/Treecuter.jpg" style="width:500px;">
+        </div>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) { slideIndex = 1 }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+      </script>
+  </article>
+  <div style="background-color: gold; padding-top: 1%;">
+    <h1 style="font-size: 30px; text-align: center">
+      Hyde Park -Waterhouse INC.
+    </h1>
+    <h2 style="font-size: 20px; text-align: center">
+      Disaster Response | Logistics | Facilities Management | Recovery Solutions
+    </h2>
+    <p style="font-size: 20px; text-align: center">
+      “Providing integrated solutions that support government agencies, businesses, and communities
+      before, during, and after critical events.”
+    </p>
+    <div style="text-align: center; padding-bottom: 1%;">
+      <button>Request Capability Statement</button>
+      <button>Partner with Us</button>
+    </div>
+  </div>
+
+</body>
